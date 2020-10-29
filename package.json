@@ -1,0 +1,29 @@
+{
+  "name": "apibooks",
+  "version": "1.0.0",
+  "description": "API for Books",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KewinLizarraga/APIbooks.git"
+  },
+  "author": "Kewin Lizarraga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KewinLizarraga/APIbooks/issues"
+  },
+  "homepage": "https://github.com/KewinLizarraga/APIbooks#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  }
+}
