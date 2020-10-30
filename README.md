@@ -24,7 +24,7 @@ npm run dev
 
 ## Endpoints
 
-|        |       routes       |               Cool |
+|        |       endpoint       |                    |
 | ------ | :----------------: | -----------------: |
 | GET    |     api/book/      |     list all books |
 |        |   api/book/:\_id   |      list one book |
