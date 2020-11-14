@@ -20,7 +20,9 @@
   "homepage": "https://github.com/KewinLizarraga/APIbooks#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.10.11"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "passport-jwt": "^4.0.0"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
