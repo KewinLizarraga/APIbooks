@@ -1,66 +1,77 @@
 # API Books
 
-## Clone repository
+- Clone repository
 
 ```sh
 git clone https://github.com/KewinLizarraga/APIbooks.git
 ```
 
-## Install dependencies
+- Install dependencies
 
 ```sh
 npm i
 ```
 
-## Create a file .env
+- Create a file **.env** _[Revisar .env.example]_
 
-Revisar .env.example
-
-## Run the API
+- Run the API
 
 ```sh
 npm run dev
 ```
 
-## Endpoints
+# Endpoints
 
-|        |       endpoint       |                    |
-| ------ | :----------------: | -----------------: |
-| GET    |     api/book/      |     list all books |
-|        |   api/book/:\_id   |      list one book |
-|        | api/book/pag/:page | list books by page |
-| POST   |     api/book/      |      register book |
-| PUT    |   api/book/:\_id   |        update book |
-| DELETE |   api/book/:\_id   |        delete book |
+## Users
+
+- POST
+
+|   endpoint   |                  description |
+| :----------: | ---------------------------: |
+|  api/login   |     inicia sesión el usuario |
+| api/register | se registra un nuevo usuario |
+
+## Books
+
+- GET
+
+|      endpoint      |            description |
+| :----------------: | ---------------------: |
+|      api/book      | lista todos los libros |
+| api/book/pag/:page |  lista cada 100 libros |
+|   api/book/:\_id   |    lista un solo libro |
+
+- POST
+
+| endpoint |             description |
+| :------: | ----------------------: |
+| api/book | registra un nuevo libro |
+
+- PUT
+
+|    endpoint    |                 description |
+| :------------: | --------------------------: |
+| api/book/:\_id | edita informacion del libro |
+
+- DELETE
+
+|    endpoint    |      description |
+| :------------: | ---------------: |
+| api/book/:\_id | elimina un libro |
 
 ## Example JSON
 
 ```sh
-{
-    "booksCount": 100,
-    "books": [
-        {
-            "categories": [
-                "Web Development",
-                ...
-            ],
-            "authors": [
-                "Rob Allen",
-                ...
-            ],
-            "_id": "5f9c524278d151f76cec62c1",
-            "isbn": "1933988320",
-            "title": "Zend Framework in Action",
-            "subtitle": "Edit. Manning",
-            "published": "2008-12-01T08:00:00.000Z",
-            "publisher": "Manning",
-            "pages": 432,
-            "shortDescription": "Zend Framework in Action is ...",
-            "longDescription": "From rather humble beginnings as the Personal ...",
-            "imgUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg",
-            "website": "https://www.manning.com/books/zend-framework-in-action"
-            "__v": 0
-        },
-        ...
-}
+ {
+    "title": "Node.js in Action",
+    "isbn": "1617290572",
+    "pageCount": 300,
+    "publishedDate": "2013-10-15T00:00:00.000-0700",
+    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cantelon.jpg",
+    "shortDescription": "Node.js in Action is an example-driven tutorial ...",
+    "longDescription": "JavaScript on the server? Yep. Node.js is an elegant ...",
+    "status": "PUBLISH",
+    "authors": ["Mike Cantelon", ...],
+    "categories": ["Web Development"]
+  }
 ```
