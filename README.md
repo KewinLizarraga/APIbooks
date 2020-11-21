@@ -26,40 +26,42 @@ npm run dev
 
 - POST
 
-|   endpoint   |                  description |
-| :----------: | ---------------------------: |
-|  api/login   |     inicia sesión el usuario |
-| api/register | se registra un nuevo usuario |
+|   endpoint    |         description |
+| :-----------: | ------------------: |
+|  api/signup   | Register a new user |
+|   api/login   |          User login |
+|  api/profile  |        User profile |
+| \* api/logout |         User logout |
 
 ## Books
 
 - GET
 
-|      endpoint      |            description |
-| :----------------: | ---------------------: |
-|      api/book      | lista todos los libros |
-| api/book/pag/:page |  lista cada 100 libros |
-|   api/book/:\_id   |    lista un solo libro |
+|      endpoint      |          description |
+| :----------------: | -------------------: |
+|      api/book      |       List all books |
+| api/book/pag/:page | List every 100 books |
+|   api/book/:\_id   |          List a book |
 
 - POST
 
-| endpoint |             description |
-| :------: | ----------------------: |
-| api/book | registra un nuevo libro |
+| endpoint |         description |
+| :------: | ------------------: |
+| api/book | Register a new book |
 
 - PUT
 
-|    endpoint    |                 description |
-| :------------: | --------------------------: |
-| api/book/:\_id | edita informacion del libro |
+|    endpoint    |                    description |
+| :------------: | -----------------------------: |
+| api/book/:\_id | Edit the information of a book |
 
 - DELETE
 
-|    endpoint    |      description |
-| :------------: | ---------------: |
-| api/book/:\_id | elimina un libro |
+|    endpoint    |   description |
+| :------------: | ------------: |
+| api/book/:\_id | Delete a book |
 
-## Example JSON
+## Example JSON - Book
 
 ```sh
  {
